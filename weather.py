@@ -4,10 +4,10 @@ import requests
 cities = ["Лондон","Шереметьево","Череповец"]
 place = ''
 baseurl = 'https://wttr.in/'
-param = '?nTq&lang=ru'
+param = {'n':'', 'T':'', 'q':'', 'lang':'ru'}
 def get_weather(place):
-    url = baseurl + place + param
-    response = requests.get(url)
+    url = baseurl + place
+    response = requests.get(url, params=param)
     response.raise_for_status()
     print(response.text)
 
