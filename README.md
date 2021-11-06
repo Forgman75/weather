@@ -1,11 +1,22 @@
-# search.py
+# weather.py  
 
-Программа создаёт список из 10 случайных четных чисел, меньше 100. Список сортируется по возрастанию.
-Затем просит пользователя ввести своё число.  
+ The program displays the weather forecast for three places in the console: London, Sheremetyevo, Cherepovets.  
 
-Вызывает функцию s передавая ей на вход список rand_list и число введенное пользователем target.
-Функция s проверяет является ли число target равным, одному из чисел из списка rand_list и возвращает позицию числа в списке, если оно там есть. Иначе возвращает none.  
+## Installation  
 
-Затем программа выводит список пользователю. Проверяет значение переменной target_index. Если там есть какое-нибудь значение не равное none, то выводит его и число введенное пользователем. Иначе выводит пользователю сообщение, что не может найти введенное им число в списке.  
+Python3 should be already installed. Then use pip (or pip3, if there is a conflict with Python2) to install dependencies:  
 
-В программе также есть проверка введенного пользователем значения на корректность. Если введенное значение не является целым числом, то срабатывает исключение и выводится сообщение что значение не подходит.   
+    pip install -r requirements.txt  
+
+##  Usage examples  
+
+    python3 weather.py
+    
+![Output program](https://wttr.in/%D0%A8%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D1%82%D1%8C%D0%B5%D0%B2%D0%BE_nTq_lang=ru.png)  
+
+
+
+## Project Goals  
+
+The code is written for educational purposes on online-course for web-developers   
+dvmn.org.  
