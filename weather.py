@@ -2,7 +2,6 @@
 import requests
 
 cities = ["Лондон","Шереметьево","Череповец"]
-place = ''
 param = {'n':'', 'T':'', 'q':'', 'lang':'ru'}
 
 for place in cities:
