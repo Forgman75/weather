@@ -1,7 +1,6 @@
-
+import requests
 
 def main():
-    import requests
     cities = ["Лондон", "Шереметьево", "Череповец",]
     params = {'n':'', 'T':'', 'q':'', 'lang':'ru'}
 
