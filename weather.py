@@ -1,12 +1,18 @@
-# -*- coding: utf-8 -*-
-import requests
 
-cities = ["Лондон","Шереметьево","Череповец"]
-param = {'n':'', 'T':'', 'q':'', 'lang':'ru'}
 
-for place in cities:
-    url = "https://wttr.in/{p}".format(p=place)
-    response = requests.get(url, params=param)
-    response.raise_for_status()
-    print(response.text)
+def main():
+    import requests
+    cities = ["Лондон", "Шереметьево", "Череповец",]
+    params = {'n':'', 'T':'', 'q':'', 'lang':'ru'}
+
+    for place in cities:
+        url = "https://wttr.in/{p}".format(p=place)
+        response = requests.get(url, params=params)
+        response.raise_for_status()
+        print(response.text)
+
+
+if __name__ == "__main__": 
+    main() 
+
 
